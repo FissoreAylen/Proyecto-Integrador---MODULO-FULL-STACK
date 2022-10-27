@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eduardo J. Riera">    
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Destinos turísticos</title>
+</head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md miNavbar navbar-dark sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="http://www.ispc.edu.ar" target="_blank">
+                        <img src="imagenes/ispc.png" alt="Logo ISPC" width="80" title="Link al ISPC">
+                    </a>
+                    <button class="navbar-toggler " 
+                        type="button" 
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="toggle navigation">
+
+                        <span><img src="imagenes/icono.jpg" alt="" width="40"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navbar-nav">
+                            <a class="nav-link miA" aria-current="page" href="index.html" target="_self">Inicio</a>
+
+                            <div class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Destinos
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-dark">
+                                <a class="dropdown-item" href="argentina.html" target="_self">Argentina</a>
+                                <a class="dropdown-item" href="#">México</a>
+                                <!-- <hr class="dropdown-divider"> -->
+                                <a class="dropdown-item" href="#">Brasil</a>
+                                <a class="dropdown-item" href="#">Perú</a>
+                                <a class="dropdown-item" href="#">Egipto</a>
+                                <a class="dropdown-item" href="#">Italia</a>
+                                <a class="dropdown-item" href="#"></a>
+                                </div>
+                            </div>
+                            <!--  -->
+                            <a class="nav-link" href="presentacion.html" target="_self">Nosotros</a>
+                            <a class="nav-link" href="#">Registro</a>
+                            <a class="nav-link" href="#">Login</a>
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Usuario</a>
+                            <div class="position-absolute end-0">
+                                <form class="d-flex miForm" role="search" id="buscar_n" action="" target="_blank">
+                                    <input class="form-control me-2" id="entrada_buscador" type="search" placeholder="Google" aria-label="Search">
+                                    <button class="btn btn-outline-success miBoton" id="comenzar_busqueda" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </nav>
+        </header>
+        <!-- Contenido -->
+        <section>
+            <div class="container round-3 text-center">
+                <h2 class="display-2 miTitulo"><strong>ELIJE TU DESTINO TURISTICO</strong></h2>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4 miRow">
+                        <div class="row ">
+                            <!--  -->
+                            <div class="carousel slide mt-3 round-3" id="mainSlider" data-bs-ride="carousel">
+                                <div class="carousel-inner miCarousel">                            
+                                    <div class="carousel-item active">
+                                        <img src="imagenes/cataratas-del-iguazu.jpg" alt="Imagen de Argentina" class="d-block w-100" title="Cataratas del Iguazú, Argentina">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagenes/cataratas-del-iguazu.jpg" alt="Imagen de Argentina" class="d-block w-100" title="Cataratas del Iguazú, Argentina">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagenes/cataratas-del-iguazu.jpg" alt="Imagen de Argentina" class="d-block w-100" title="Cataratas del Iguazú, Argentina">
+                                    </div>                
+                                </div>
+                            </div>
+                            <h3 class="container text-light miTituloEtiqueta"><a href="argentina.html">Argentina </a><img  src="imagenes/bandera-argentina.PNG" alt="" width="13%"></h3>
+                        </div>
+                        <div class="row">
+                            <P class="miParrafo"><b>Cataratas del Iguazú:</b> Miles de litros de agua cayendo, así parece poca cosa pero es imponente cuando uno está por esos puentes de acero a metros de la Garganta del diablo.</P>
+                        </div>
+                    </div>
+                    <div class="col-4 miRow">
+                        <div class="row">
+                            <div class="carousel slide mt-3 round-3" id="mainSlider" data-bs-ride="carousel">
+                                <div class="carousel-inner miCarousel">                        
+                                    <div class="carousel-item active">
+                                        <img src="imagenes/mexico-piramide.jpg" alt="Imagen de México" class="d-block w-100" title="Pirámide de Tenochtitlan, México">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagenes/mexico-piramide.jpg" alt="Imagen de México" class="d-block w-100" title="Pirámide de Tenochtitlan, México">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagenes/mexico-piramide.jpg" alt="Imagen de México" class="d-block w-100" title="Pirámide de Tenochtitlan, México">
+                                    </div>               
+                                </div>
+                            </div>
+                            <h3 class="text-light miTituloEtiqueta">México  <img  src="imagenes/bandera-mexico.PNG" alt="" width="13%"></h3>
+                        </div>
+                        <div class="row">
+                            <p class="miParrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, deserunt! Eius modi libero nulla vitae inventore, fugiat eaque, quia illo nihil sint ad excepturi distinctio magnam harum, ex veritatis minima.</p>
+                        </div>
+                    </div>
+                    <div class="col-4 miRow">
+                        <div class="row">
+                            <div class="carousel slide mt-3 round-3" id="mainSlider" data-bs-ride="carousel">
+                                <div class="carousel-inner miCarousel">
+                                    
+                                    <div class="carousel-item active">
+                                        <img src="imagenes/cristo-redentor.jpg" alt="Imagen de Brasil" class="d-block w-100" title="Cristo Redentor, Brasil">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagenes/cristo-redentor.jpg" alt="Imagen de Brasil" class="d-block w-100" title="Cristo Redentor, Brasil">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagenes/cristo-redentor.jpg" alt="Imagen de Brasil" class="d-block w-100" title="Cristo Redentor, Brasil">
+                                    </div>
+                        
+                                </div>
+                            </div>
+                            <h3 class="text-light miTituloEtiqueta">Brasil  <img  src="imagenes/bandera-brasil.PNG" alt="" width="13%"></h3>
+                        </div>
+                        <div class="row">
+                            <p class="miParrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, deserunt! Eius modi libero nulla vitae inventore, fugiat eaque, quia illo nihil sint ad excepturi distinctio magnam harum, ex veritatis minima.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4 miRow">
+                        <div class="row" > 
+                            <div class="carousel slide mt-3 round-3" id="mainSlider" data-bs-ride="carousel">
+                                <div class="carousel-inner miCarousel">
+                                    
+                                    <div class="carousel-item active">
+                                        <img src="imagenes/machu-pichu.jpg" alt="Imagen de México" class="d-block w-100" title="Machu Pichu, Perú">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagenes/machu-pichu.jpg" alt="Imagen de México" class="d-block w-100" title="Machu Pichu, Perú">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagenes/machu-pichu.jpg" alt="Imagen de México" class="d-block w-100" title="Machu Pichu, Perú">
+                                    </div>
+                        
+                                </div>
+                            </div>
+                            <h3 class="text-light miTituloEtiqueta">Perú  <img  src="imagenes/bandera-peru.PNG" alt="" width="13%"></h3>
+                        </div>
+                        <div class="row"><P class="miParrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eius accusantium culpa quidem dicta? Aut numquam, accusantium impedit quam sapiente odit, voluptatem mollitia, error et sequi quos exercitationem illo. Quo.</P></div>
+                    </div>
+                    <div class="col-4 miRow">
+                        <div class="row">
+                            <div class="carousel slide mt-3 round-3" id="mainSlider" data-bs-ride="carousel">
+                                <div class="carousel-inner miCarousel">
+                                    
+                                    <div class="carousel-item active">
+                                        <img src="imagenes/egipto.jpg" alt="Imagen de Egipto" class="d-block w-100" title="Pirámide de Keops, Egipto">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagenes/egipto.jpg" alt="Imagen de Egipto" class="d-block w-100" title="Pirámide de Keops, Egipto">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagenes/egipto.jpg" alt="Imagen de Egipto" class="d-block w-100" title="Pirámide de Keops, Egipto">
+                                    </div>
+                        
+                                </div>
+                            </div>
+                            <h3 class="text-light miTituloEtiqueta">Egipto  <img  src="imagenes/bandera-egipto.PNG" alt="" width="13%"></h3>
+                        </div>
+                        <div class="row">
+                            <p class="miParrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, deserunt! Eius modi libero nulla vitae inventore, fugiat eaque, quia illo nihil sint ad excepturi distinctio magnam harum, ex veritatis minima.</p>
+                        </div>
+                    </div>
+                    <div class="col-4 miRow">
+                        <div class="row shadow">
+                            <div class="carousel slide mt-3 round-3" id="mainSlider" data-bs-ride="carousel">
+                                <div class="carousel-inner miCarousel">
+                                    
+                                    <div class="carousel-item active">
+                                        <img src="imagenes/coliceo.jpg" alt="Imagen de Italia" class="d-block w-100" title="Coliceo Romano, Italia">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagenes/coliceo.jpg" alt="Imagen de Italia" class="d-block w-100" title="Coliceo Romano, Italia">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imagenes/coliceo.jpg" alt="Imagen de Italia" class="d-block w-100" title="Coliceo Romano, Italia">
+                                    </div>
+                        
+                                </div>
+                            </div>
+                            <h3 class="text-light miTituloEtiqueta">Italia  <img  src="imagenes/bandera-italia.PNG" alt="" width="13%"></h3>
+                        </div>
+                        <div class="row">
+                            <p class="miParrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, deserunt! Eius modi libero nulla vitae inventore, fugiat eaque, quia illo nihil sint ad excepturi distinctio magnam harum, ex veritatis minima.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container-fluid miPie text-white text-center ">
+                <p>&copy; 2022 GGG grupo de estudiantes</p>
+            </div>
+        </footer>
+
+        <script src="bootstrap/bootstrap.min.js"></script>
+        <script src="busqueda.js"></script>
+    </body>
+</html>

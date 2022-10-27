@@ -1,0 +1,116 @@
+.miNavbar{
+    background: linear-gradient(180deg, rgb(68, 20, 84), rgb(59, 76, 0));
+}
+
+.miTitulo{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+    color: aliceblue;
+    text-shadow: 5px 5px 3px #441454;
+}
+a{
+    text-decoration: none;
+}
+body{
+    box-sizing: border-box;
+    background: linear-gradient(180deg, rgb(59, 76, 0), rgb(68, 20, 84));
+}
+
+.miForm{
+    padding-right: 15px;
+    padding-top: 8px;
+}
+
+.miBoton{
+    background-color: #3b4c00;
+}
+
+.miParrafo{
+    color: aliceblue;   
+}
+
+.miRow{
+    border-radius: 10px;
+    background-color: #3b4c00;
+    border: solid 1px #441454;
+    margin-top: 2px;
+}
+
+.miCarousel{
+    border-radius: 7px;
+}
+
+.imagen{
+    margin-top: 15px;
+    border-radius: 5%;
+}
+
+footer{
+    margin: 0px;
+    padding: 0px;
+}
+
+.miPie{
+    margin-top: 0px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 576px){
+	.miParrafo{
+		font-size: 12px;
+	}
+    .miTituloEtiqueta{
+        font-size: 22px;
+    }
+}
+.imagenContenido{
+    padding: 5px;
+    border: solid 1px #441454;
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+    background-color: #3b4c00;
+    border-bottom: none;
+}
+.parrafoContenido{
+    /* color: #fcf304; */
+    background-color: #3b4c00;
+    border: solid 1px #441454;
+    border-top: none;
+    padding: 5px;
+    /* text-align: justify; */
+    margin-bottom: 0px;
+}
+@media screen and (max-width: 576px){
+    .parrafoContenido{
+        font-size: 12px;
+    }
+    .labelContenido{
+        font-size: 14px;
+    }
+    .iframeParrafoContenido{
+        min-height: 450px;
+    }
+}
+.divformContenido{   
+    border: solid 1px;
+    margin-top: 0px;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-color: #441454;
+    border-left-color: #441454;
+    border-right: #441454;
+    background-color: #3b4c00;
+}
+.inputContenido{
+    cursor: pointer;
+}
+.labelContenido{
+    color:antiquewhite;
+}
+.iframeParrafoContenido{
+    color: #fcf304;
+    /* min-height: 450px; */
+    text-align: justify;
+}
