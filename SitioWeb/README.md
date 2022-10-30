@@ -1,2 +1,2 @@
 # Sitio web prototipo.
-[Visitalo](http://eduardo-riera.hithub.io)
+[Visitalo](eduardo-riera.github.io)
