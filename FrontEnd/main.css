@@ -1,6 +1,12 @@
 .miNavbar{
     background: linear-gradient(180deg, rgb(68, 20, 84), rgb(59, 76, 0));
 }
+#mi_modal {
+	background: linear-gradient(270deg, rgb(68, 20, 84), rgb(59, 76, 0));	
+}
+#bgImagenModal{
+    background: linear-gradient(90deg, rgb(68, 20, 84), rgb(59, 76, 0));
+}
 
 .miTitulo{
     font-family: 'Times New Roman', Times, serif;
@@ -44,6 +50,12 @@ body{
 .imagen{
     margin-top: 15px;
     border-radius: 5%;
+    transition: 0.3s ease;
+    transform: rotate(5deg);
+}
+.imagen:hover{
+    box-shadow: 5px 5px 10px gray;
+    transform: scale(1.03);     
 }
 
 footer{
@@ -81,9 +93,9 @@ footer{
     /* text-align: justify; */
     margin-bottom: 0px;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 576px){
     .parrafoContenido{
-        font-size: 10px;
+        font-size: 12px;
     }
     .labelContenido{
         font-size: 14px;
@@ -91,12 +103,7 @@ footer{
     .iframeParrafoContenido{
         min-height: 450px;
     }
-} 
-/* @media screen and (max-width: 1024px){
-    .iframeParrafoContenido{
-        min-height: 200px;
-    }
-} */
+}
 .divformContenido{   
     border: solid 1px;
     margin-top: 0px;
@@ -116,19 +123,12 @@ footer{
 }
 .iframeParrafoContenido{
     color: #fcf304;
-    /* height: 100%; */
-    text-align: justify;
+    text-align: justify;   
 }
-/* .embed-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
+.iframeParrafoContenido::-webkit-scrollbar{
+    width: 7px;
 }
-.embed-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
+.iframeParrafoContenido::-webkit-scrollbar-thumb{
+    background: #441454;
+    border-radius: 5px;
+}

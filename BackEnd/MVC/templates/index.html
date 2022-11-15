@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Destinos</title>
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+</head>
+<body class="container p-4">
+	<h1 class="display-4 text-center title mt-4">Usuarios y preferencias</h1>
+	<div class="row">
+		<div class="col-md-4 offset-md-4 my-auto">
+			<div class="card">
+				<div class="card-body">
+					<ul class="list-group">
+						{% for usuario in list %}
+							<li class="list-group-item">
+								<span class="">Nombre: {{usuario[0]}}</span>
+								<br>
+								<span class="">Preferencias: {{usuario[1]}}</span>
+							</li>
+						{% endfor %}
+					</ul>
+				</div>							
+			</div>
+		</div>
+	</div>
+	<a href="/logout">Logout</a>
+</body>
+</html>
