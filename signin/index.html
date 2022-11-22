@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formulario">
+        <h1>Registro de usuario</h1>
+        <form method="post">
+
+            <div class="username">
+                <input type="text" required>
+                <label>Nombre de usuario</label>
+            </div>
+
+            <div class="username">
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+
+            <div class="username">
+                <input type="password" required>
+                <label>Contraseña</label>
+            </div>
+
+            <div class="username">
+                <label>¿En qué país vives?</label><br><br><br>
+                <select required>
+
+                    <optgroup label="Europa">
+                        <option value="reinounido">Reino Unido</option>
+                        <option value="francia">Francia</option>
+                        <option value="espana">España</option>
+                        <option value="italia">Italia</option>
+                    </optgroup>
+
+                    <optgroup label="América">
+                        <option value="estadosunidos">Estados Unidos</option>
+                        <option value="canada">Canadá</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="ecuador">Ecuador</option>
+                    </optgroup>
+
+                    <optgroup label="Asia">
+                        <option value="china">China</option>
+                        <option value="japon">Japón</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <input type="submit" value="Registrarme">
+            <div class="registrarse">
+                Quiero <a href="#">iniciar sesión</a>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
