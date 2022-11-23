@@ -31,13 +31,7 @@
 
 /*barra de navegacion*/
 .barra-nav{
-
-width: 100%;
-height: 128px;
-margin-top: 0px;
-margin-bottom: 0px;
-
-background: var(--ColorPrincipal);
+background: var(--ColorPrincipal) !important;
 
 }
 .flex {
@@ -45,10 +39,11 @@ background: var(--ColorPrincipal);
     justify-content: space-between;
 }
 .logotipo{
-  font-family: var(--FuenteYaldevi);
+  font-family: var(--FuenteYaldevi)!important;
   font-size: 50px;
-  color:#ffffff;
+  color:var(--ColorAlternante);
   margin: 30px;
+  
 }
 .btn-princ {
     margin-top: 30px;
@@ -58,16 +53,15 @@ background: var(--ColorPrincipal);
     justify-content: center;
 }
 .btn-prim{
-font-family: var(--FuenteZilla);
-color: var(--ColorAlternante);
-font-size: 25px;
+background-color: var(--ColorAlternante)!important;
+font-size: var(--FuenteMontserrat);
 
-margin:10px;
 }
 .st-btn-princ{
- font-family: var(--FuenteMartel);
+ font-family: var(--FuenteMartel)!important;
 background-color: var(--ColorAlternante);
 margin:10px;
+justify-content: center;
 
 /*texto principal*/
 }
@@ -81,19 +75,20 @@ margin:10px;
 .btn-destinos{
 display: flex;
 flex-wrap: wrap;
-align-items: center;
-margin-left: 90px;
-
+justify-content: center;
+padding: 30px;
 }
-.btn-destinos-abajo{
-  display:flex;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-left: 850px;
+
+.img-destino{
+max-width:400px;
+max-height: 400px;
 }
 .img-destino{
-max-width:500px;
-max-height: 500px;
+	transition: 0.4s ease;
+}
+
+.img-destino:hover{
+	transform: scale(1.5, 1.5);
 }
 
 .btn-text-destinos{
@@ -103,23 +98,33 @@ max-height: 500px;
   margin-left: 300px;
   font-size: 40px;
 }
+
+
 /*footer*/
 footer{
-
-width: 100%;
-height: 500px;
-margin-top: 0px;
-margin-bottom: 0px;
-
 background: var(--ColorPrincipal);
+height: 200px;
 
+}
+.footer-text{
+margin-top: 40px;
 
 
 }
+
 .text-footer{
-  font-family: var(--FuenteArchivo);
-  color: #ffffff;
-  font-size: 30px;
-  align-items: center;
-  display: flex;
+
+
+  color: #ffffff !important;
+  
+  
+}
+
+
+@media (max-width : 500px)
+{ 
+  .img-destino:hover{
+
+transform: scale(1.1, 1.1);
+  }
 }
