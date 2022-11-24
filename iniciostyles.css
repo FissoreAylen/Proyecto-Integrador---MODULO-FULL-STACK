@@ -106,7 +106,7 @@ margin-left: 300px;
 font-size: 40px;
 }
 
-/*CARDS DESTINOS*/
+/*PAGINA DE LAS CARDS DE DESTINOS*/
 
 .card{
   width:18rem;
@@ -119,11 +119,6 @@ font-size: 40px;
   color:#ffffff;
   
 }
-
-
-
-
-
 
 /*footer*/
 footer{
@@ -143,8 +138,22 @@ font-size: 16px;
 
 }
 
+/*PAGINAS DE DESTINOS*/
 
-/*RESPONSIVE*/
+.card{
+  width:18rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left:50px;
+  margin-right: 25px;
+  background:var(--ColorPrincipal); 
+  font-style: var(--FuenteArchivo);
+  color:#ffffff;
+  
+}
+
+
+/*RESPONSIVE DE LAS PÁGINAS DE DESTINOS*/
 
 @media (max-width:768px) {
   .card{
