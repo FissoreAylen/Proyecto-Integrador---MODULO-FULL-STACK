@@ -1,0 +1,171 @@
+:root {
+    --ColorPrincipal: #441454;
+    --ColorAlternante: #fcf304;
+
+    
+
+    --FuenteMartel: "Martel Sans", sans-serif;
+      --FuenteZilla:"ZillaSlabHighlight";
+   --FuenteMontserrat:"Montserrat";
+   --FuenteYadelvi:"Yaldevi";
+  --FuenteArchivo:"Archivo";
+
+}
+
+@font-face {
+  font-family: "ZillaSlabHighlight";
+  src: url(./fonts/ZillaSlabHighlight-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./fonts/Oxanium-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Yaldevi";
+  src: url(/fonts/YaldeviColombo-Bold.ttf);
+}
+  @font-face {
+    font-family: "Archivo";
+    src: url(/fonts/Archivo-Regular.ttf);
+  }
+
+/*barra de navegacion*/
+.barra-nav{
+background: var(--ColorPrincipal) !important;
+
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+.logotipo{
+  font-family: var(--FuenteYaldevi)!important;
+  font-size: 50px;
+  color:var(--ColorAlternante);
+  margin: 30px;
+  
+}
+.btn-princ {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: reverse;
+    align-items: center;
+    justify-content: center;
+}
+.btn-prim{
+background-color: var(--ColorAlternante)!important;
+font-size: var(--FuenteMontserrat);
+
+}
+.st-btn-princ{
+ font-family: var(--FuenteMartel)!important;
+background-color: var(--ColorAlternante);
+margin:10px;
+justify-content: center;
+
+/*texto principal*/
+}
+.texto-principal{
+  margin:50px;
+  text-align: center;
+  font-family: var(--FuenteMontserrat);
+  font-size: 500px;
+}
+/*botonos de los destinos turisticos por continentes*/
+.btn-destinos{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding: 30px;
+}
+
+.img-destino{
+max-width:400px;
+max-height: 400px;
+}
+.img-destino{
+	transition: 0.4s ease;
+}
+
+.img-destino:hover{
+	transform: scale(1.5, 1.5);
+}
+
+.btn-text-destinos{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 300px;
+  font-size: 40px;
+}
+
+
+/*footer*/
+footer{
+background: var(--ColorPrincipal);
+height: 200px;
+
+}
+.footer-text{
+margin-top: 40px;
+
+
+}
+
+.text-footer{
+
+
+  color: #ffffff !important;
+  
+  
+}
+
+
+@media (max-width : 500px)
+{ 
+  .img-destino:hover{
+
+transform: scale(1.1, 1.1);
+  }
+}
+
+
+/* PAGINAS DE LOS DESTINOS */
+
+/*CARDS DESTINOS*/
+
+.card{
+  width:18rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left:50px;
+  margin-right: 25px;
+  background:var(--ColorPrincipal); 
+  font-style: var(--FuenteArchivo);
+  color:#ffffff;
+  
+}
+/*RESPONSIVE*/
+
+@media (max-width:768px) {
+  .card{
+      width: 90%;
+      margin-left:30px;
+      right: 15px;   
+  }
+  .logotipo{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+  }
+
+}
+
+  @media(min-width: 768px){
+   .card{
+    width: 80%;
+       
+   }
+  
+  }
+
